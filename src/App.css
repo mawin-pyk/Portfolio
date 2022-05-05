@@ -1,0 +1,92 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0px;
+    color: var(--color-primary-text);
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--color-primary-background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* color */
+    --color-primary-background: #181818;
+    --color-secondary-background: #212121;
+    --color-menu: #3d3d3d;
+    --color-primary-text: #ffffff;
+    --color-secondary-text: #aaaaaa;
+    --color-dark-turquoise: #04d9d9;
+    --color-french-violet: #8404d9;
+}
+
+h1, h2 {
+    margin: 0px;
+}
+
+a {
+    color: var(--color-primary-text);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p {
+    margin: 0px;
+    font-size: 1.6rem;
+    line-height: 2.72rem;
+}
+
+label {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 5px 10px;
+    border: 4px solid var(--color-menu);
+    box-sizing: border-box;
+    display: inline-block;
+    color: var(--color-primary-text);
+    font-size: 1.6rem;
+    background: none;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--color-dark-turquoise);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    color: var(--color-primary-text);
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--color-menu);
+    transition: all 0.3s;
+    outline: none;
+}
+
+button:hover {
+    color: var(--color-primary-background);
+    background-color: var(--color-dark-turquoise);
+    cursor: pointer;
+}
+
+/* fide in */
+.fade-in-section {
+    opacity: 0;
+    transform:  translateY(20vh);
+    visibility: hidden;
+    transition:  opacity 1.2s ease-out, transform 0.6s ease-out, visibility 1.2s ease-out;
+    will-change: opacity, transform, visibility;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}

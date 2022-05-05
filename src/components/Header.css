@@ -1,0 +1,145 @@
+.Header {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.header-content {
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo h1 {
+    cursor: default;
+}
+
+.mobile__icon {
+    position: relative;
+}
+
+.mobile__icon input {
+    width: 30px;
+    height: 21px;
+    margin: 0px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.mobile__icon span {
+    width: 30px;
+    height: 2px;
+    margin-bottom: 5px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    background-color: var(--color-primary-text);
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+
+.mobile__icon span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+.mobile__icon input:checked ~ span {
+    transform: rotate(45deg) translate(-3px, -1px);
+}
+
+.mobile__icon input:checked ~ span:nth-last-child(3) {
+    transform: rotate(0deg) scale(0.2, 0.2);
+    opacity: 0;
+}
+
+.mobile__icon input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+.mobile__menu {
+    width: 60vw;
+    height: 1024px;
+    margin-top: -52px;
+    padding-top: 52px;
+    box-sizing: border-box;
+    position: absolute;
+    left: -40vw;
+    background-color: var(--color-menu);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.mobile__menu a {
+    padding: 10px 20px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.mobile__menu a.active {
+    color: var(--color-dark-turquoise);
+}
+
+.mobile__menu a::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    margin-top: 5px;
+    display: block;
+    background-color: var(--color-dark-turquoise);
+    transition: width 0.3s;
+}
+
+.mobile__menu a.active::after {
+    width: 100%;
+}
+
+.mobile__icon input:checked ~ .mobile__menu {
+    transform: none;
+}
+
+.header__menu {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .mobile__icon {
+        display: none;
+    }
+
+    .header__menu {
+        display: flex;
+        gap: 0px 40px;
+    }
+
+    .header__menu a {
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .header__menu a.active {
+        color: var(--color-dark-turquoise);
+    }
+
+    .header__menu a::after {
+        content: "";
+        width: 0%;
+        height: 4px;
+        margin-top: 5px;
+        display: block;
+        background-color: var(--color-dark-turquoise);
+        transition: width 0.3s;
+    }
+
+    .header__menu a.active::after {
+        width: 100%;
+    }
+
+}
