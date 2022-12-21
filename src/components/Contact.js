@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import FadeInSection from './FideInSection';
 import '../styles/contact.css';
 
 function Contact() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_ltgctpu', 'template_faff2uh', form.current, 'cN9BgE32md0AwLYKY')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
     return (
         <section className="Contact" id="contact">
             <div className="contact-content">
@@ -29,19 +43,23 @@ function Contact() {
                                 09-4405-2942
                             </p>
                         </div>
-                        <form className="contact__message">
+                        <form className="contact__message" ref={form} onSubmit={sendEmail}>
                             <h2>Message</h2>
                             <div className="form-group">
                                 <label htmlFor="name">Your Name</label>
-                                <input type="text" id="name" />
+                                <input type="text" id="name" name="name" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="email">Your Email</label>
-                                <input type="email" id="email" />
+                                <input type="email" id="email" name="email" />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="subject">Your Subject</label>
+                                <input type="text" id="subject" name="subject" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="message">Your Message</label>
-                                <textarea id="message" cols="30" rows="10"></textarea>
+                                <textarea id="message" cols="30" rows="10" name="message"></textarea>
                             </div>
                             <button type="submit">Send message</button>
                         </form>
