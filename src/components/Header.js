@@ -5,16 +5,27 @@ function Header() {
     const [scrollPosition, setScrollPosition] = useState(0);
 
     useEffect(() => {
-        const header = document.querySelector(".header");
-        if (scrollPosition > 100) {
+        const header = document.querySelector(".Header");
+        if (scrollPosition > 90) {
             header.style.fontSize = "1.2rem";
-            header.style.backgroundColor = "var(--white)";
-            header.style.boxShadow = "0px 2px 4px 0px rgba(0, 0, 0, 0.25)";
+            header.style.boxShadow = "0px 4px 6px 0px rgba(0, 0, 0, 0.1)";
         } else {
             header.style.fontSize = "1.6rem";
-            header.style.backgroundColor = "unset";
             header.style.boxShadow = "unset";
         }
+
+        const sections = document.querySelectorAll("section");
+        const menus = document.querySelectorAll(".header-content a");
+        let current = "";
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollPosition >= sectionTop - sectionHeight / 2.5) current = section.getAttribute("id");
+        });
+        menus.forEach((menu) => {
+            menu.classList.remove("active");
+            if (menu.classList.contains(current)) menu.classList.add("active");
+        });
 
         window.addEventListener("scroll", scrollEvent);
 
@@ -29,7 +40,7 @@ function Header() {
     }
 
     return (
-        <div className="header">
+        <div className="Header">
             <div className="header-content">
                 <div className="header__logo">
                     <h1>Mawin &lt;/&gt;</h1>
@@ -40,19 +51,19 @@ function Header() {
                     <span></span>
                     <span></span>
                     <nav className="header__bar-menu">
-                        <a href="#home">Home</a>
-                        <a href="#about-me">About me</a>
-                        <a href="#skill">Skills</a>
-                        <a href="#project">Projects</a>
-                        <a href="#contact">Contact</a>
+                        <a className="home active" href="#home">Home</a>
+                        <a className="about" href="#about">About me</a>
+                        <a className="skill" href="#skill">My Skills</a>
+                        <a className="project" href="#project">Projects</a>
+                        <a className="contact" href="#contact">Contact</a>
                     </nav>
                 </div>
                 <nav className="header__menu">
-                    <a href="#home">Home</a>
-                    <a href="#about-me">About me</a>
-                    <a href="#skill">Skills</a>
-                    <a href="#project">Projects</a>
-                    <a href="#contact">Contact</a>
+                    <a className="home active" href="#home">Home</a>
+                    <a className="about" href="#about">About me</a>
+                    <a className="skill" href="#skill">My Skills</a>
+                    <a className="project" href="#project">Projects</a>
+                    <a className="contact" href="#contact">Contact</a>
                 </nav>
             </div>
         </div>

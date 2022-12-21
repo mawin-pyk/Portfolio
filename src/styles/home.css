@@ -1,14 +1,19 @@
-.home {
-    height: 100vh;
+.Home {
+    height: 90vh;
 }
 
 .home-content {
     width: 90%;
     height: 100%;
-    margin: 0px auto;
+    margin: 103px auto 0px auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.home__text {
+    text-align: center;
 }
 
 .home__text h3 {
@@ -17,8 +22,7 @@
 }
 
 .home__text h1 {
-    font-size: 10rem;
-    text-align: center;
+    font-size: 4.2rem;
 }
 
 .home__text h1 span {
@@ -26,6 +30,63 @@
 }
 
 .home__text h2 {
-    font-size: 4.8rem;
+    font-size: 4.2rem;
+}
+
+.home__link {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.home__link a {
+    min-width: 160px;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    color: var(--gray);
     text-align: center;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.home__link a:last-child {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+@media only screen and (min-width: 768px) {
+
+    .home-content {
+        margin: 0px auto;
+    }
+
+    .home__text h1 {
+        font-size: 6rem;
+        line-height: 10.2rem;
+    }
+
+    .home__text h2 {
+        font-size: 4.8rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .home-content {
+        width: 1080px;
+    }
+
+    .home__text h3 {
+        text-align: start;
+    }
+
+    .home__text h1 {
+        font-size: 8rem;
+        line-height: 13.6rem;
+    }
+
 }
