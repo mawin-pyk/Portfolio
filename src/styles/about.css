@@ -65,11 +65,6 @@
         flex: 1;
     }
 
-    .about__detail p {
-        font-size: 2rem;
-        line-height: 3.4rem;
-    }
-
 }
 
 @media only screen and (min-width: 1200px) {
@@ -103,6 +98,11 @@
     .about__education,
     .about__experience {
         flex: 1;
+    }
+
+    .about__detail p {
+        font-size: 2rem;
+        line-height: 3.4rem;
     }
 
 }

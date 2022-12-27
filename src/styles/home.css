@@ -6,23 +6,14 @@
     width: 90%;
     height: 100%;
     margin: 103px auto 0px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .home__text {
     text-align: center;
 }
 
-.home__text h3 {
-    color: var(--gray);
-    font-size: 2.4rem;
-}
-
 .home__text h1 {
-    font-size: 4.2rem;
+    font-size: 4.8rem;
 }
 
 .home__text h1 span {
@@ -30,11 +21,13 @@
 }
 
 .home__text h2 {
-    font-size: 4.2rem;
+    margin-top: 20px;
+    color: var(--gray);
+    font-size: 1.6rem;
 }
 
 .home__link {
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -42,7 +35,7 @@
 }
 
 .home__link a {
-    min-width: 160px;
+    min-width: 220px;
     padding: 10px 40px;
     box-sizing: border-box;
     color: var(--gray);
@@ -57,19 +50,22 @@
     background-color: var(--blue);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 375px) {
 
     .home-content {
         margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .home__text h1 {
-        font-size: 6rem;
-        line-height: 10.2rem;
-    }
+}
 
-    .home__text h2 {
-        font-size: 4.8rem;
+@media only screen and (min-width: 768px) {
+
+    .home__link {
+        margin-top: 80px;
     }
 
 }
@@ -80,13 +76,12 @@
         width: 1080px;
     }
 
-    .home__text h3 {
-        text-align: start;
-    }
-
     .home__text h1 {
         font-size: 8rem;
-        line-height: 13.6rem;
+    }
+
+    .home__text h2 {
+        font-size: 2rem;
     }
 
 }

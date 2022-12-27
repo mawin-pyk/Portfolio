@@ -87,6 +87,14 @@
         flex: 1;
     }
 
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .contact-content {
+        width: 1080px;
+    }
+
     .contact__address h2,
     .contact__message h2 {
         font-size: 2.8rem;
@@ -104,14 +112,6 @@
     .form-group input,
     .form-group textarea {
         font-size: 2rem;
-    }
-
-}
-
-@media only screen and (min-width: 1200px) {
-
-    .contact-content {
-        width: 1080px;
     }
 
 }

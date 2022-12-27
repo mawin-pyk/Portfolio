@@ -1,0 +1,30 @@
+.Footer {
+    border-top: 1px solid var(--border);
+    background-color: var(--background);
+}
+
+.footer-content {
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+.footer-content p {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .footer-content p {
+        text-align: start;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .footer-content {
+        width: 1080px;
+    }
+
+}
