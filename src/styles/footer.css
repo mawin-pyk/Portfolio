@@ -10,6 +10,7 @@
 }
 
 .footer-content p {
+    color: var(--gray);
     text-align: center;
 }
 

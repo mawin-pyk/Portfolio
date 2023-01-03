@@ -1,20 +1,40 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { useForm } from 'react-hook-form';
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
 import FadeInSection from './FideInSection';
 import '../styles/contact.css';
 
+const Alert = React.forwardRef(function Alert(props, ref) {
+    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />
+});
+
 function Contact() {
+    const [alear, setAlear] = useState(false);
+
     const form = useRef();
+    const { handleSubmit, register, formState: { errors }, reset } = useForm();
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-
+    const sendEmail = () => {
         emailjs.sendForm('service_ltgctpu', 'template_faff2uh', form.current, 'cN9BgE32md0AwLYKY')
             .then((result) => {
-                console.log(result.text);
+                alearOpen();
+                reset();
             }, (error) => {
                 console.log(error.text);
             });
+    };
+
+    const alearOpen = () => {
+        setAlear(true);
+    };
+
+    const alearClose = (event, reason) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+        setAlear(false);
     };
 
     return (
@@ -43,29 +63,63 @@ function Contact() {
                                 09-4405-2942
                             </p>
                         </div>
-                        <form className="contact__message" ref={form} onSubmit={sendEmail}>
+                        <form className="contact__message" ref={form} onSubmit={handleSubmit(sendEmail)}>
                             <h2>Message</h2>
                             <div className="form-group">
                                 <label htmlFor="name">Your Name</label>
-                                <input type="text" id="name" name="name" />
+                                <input type="text" id="name" name="name"
+                                    {...register("name", {
+                                        required: "กรุณากรอกชื่อ",
+                                        minLength: { value: 2, message: "ความยาวระหว่าง 2 ถึง 30 ตัวอักษร" },
+                                        maxLength: { value: 30, message: "ความยาวระหว่าง 2 ถึง 30 ตัวอักษร" },
+                                    })}
+                                />
+                                <p>{errors.name && errors.name.message}</p>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="email">Your Email</label>
-                                <input type="email" id="email" name="email" />
+                                <input type="text" id="email" name="email"
+                                    {...register("email", {
+                                        required: "กรุณากรอกอีเมล",
+                                        pattern: { value: /^\S+@\S+\.\S+$/, message: "รูปแบบอีเมลไม่ถูกต้อง" },
+                                        minLength: { value: 6, message: "ความยาวระหว่าง 6 ถึง 30 ตัวอักษร" },
+                                        maxLength: { value: 30, message: "ความยาวระหว่าง 6 ถึง 30 ตัวอักษร" },
+                                    })}
+                                />
+                                <p>{errors.email && errors.email.message}</p>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="subject">Your Subject</label>
-                                <input type="text" id="subject" name="subject" />
+                                <input type="text" id="subject" name="subject"
+                                    {...register("subject", {
+                                        required: "กรุณากรอกชื่อเรื่อง",
+                                        minLength: { value: 2, message: "ความยาวระหว่าง 2 ถึง 30 ตัวอักษร" },
+                                        maxLength: { value: 30, message: "ความยาวระหว่าง 2 ถึง 30 ตัวอักษร" },
+                                    })}
+                                />
+                                <p>{errors.subject && errors.subject.message}</p>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="message">Your Message</label>
-                                <textarea id="message" cols="30" rows="10" name="message"></textarea>
+                                <textarea id="message" cols="30" rows="10" name="message"
+                                    {...register("message", {
+                                        required: "กรุณากรอกข้อความ",
+                                        minLength: { value: 2, message: "ความยาวระหว่าง 2 ถึง 200 ตัวอักษร" },
+                                        maxLength: { value: 200, message: "ความยาวระหว่าง 2 ถึง 200 ตัวอักษร" },
+                                    })}
+                                ></textarea>
+                                <p>{errors.message && errors.message.message}</p>
                             </div>
                             <button type="submit">Send message</button>
                         </form>
                     </div>
                 </FadeInSection>
             </div>
+            <Snackbar open={alear} autoHideDuration={6000} onClose={alearClose}>
+                <Alert onClose={alearClose} severity="success" sx={{ width: '100%' }}>
+                    Sent Successfully
+                </Alert>
+            </Snackbar>
         </section>
     );
 }
