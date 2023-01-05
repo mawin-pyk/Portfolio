@@ -1,5 +1,19 @@
 import React from 'react';
 import FadeInSection from './FideInSection';
+import html from '../files/html.webp';
+import css from '../files/css.webp';
+import scss from '../files/scss.webp';
+import javascript from '../files/javascript.webp';
+import react from '../files/react.webp';
+import next from '../files/next.webp';
+import node from '../files/node.webp';
+import laravel from '../files/laravel.webp';
+import firebase from '../files/firebase.webp';
+import mysql from '../files/mysql.webp';
+import bootstrap from '../files/bootstrap.webp';
+import mui from '../files/mui.webp';
+import jquery from '../files/jquery.webp';
+import git from '../files/git.webp';
 import '../styles/skill.css';
 
 function Skill() {
@@ -11,117 +25,33 @@ function Skill() {
                     <div className="skill-content-row">
                         <div className="skill__front">
                             <h2>Front End</h2>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-check-square-fill" viewBox="0 0 16 16">
-                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
-                                </svg>
-                                &nbsp;
-                                HTML
-                            </p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-check-square-fill" viewBox="0 0 16 16">
-                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
-                                </svg>
-                                &nbsp;
-                                CSS
-                            </p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-check-square-fill" viewBox="0 0 16 16">
-                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
-                                </svg>
-                                &nbsp;
-                                SCSS
-                            </p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-check-square-fill" viewBox="0 0 16 16">
-                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
-                                </svg>
-                                &nbsp;
-                                JavaScript
-                            </p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-check-square-fill" viewBox="0 0 16 16">
-                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
-                                </svg>
-                                &nbsp;
-                                React JS
-                            </p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-check-square-fill" viewBox="0 0 16 16">
-                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
-                                </svg>
-                                &nbsp;
-                                Next JS (ฺBasic)
-                            </p>
+                            <p><img src={html} alt="" /> &nbsp; HTML</p>
+                            <p><img src={css} alt="" /> &nbsp; CSS</p>
+                            <p><img src={scss} alt="" /> &nbsp; SCSS</p>
+                            <p><img src={javascript} alt="" /> &nbsp; JavaScript</p>
+                            <p><img src={react} alt="" /> &nbsp; React JS</p>
+                            <p><img src={next} alt="" /> &nbsp; Next JS (ฺBasic)</p>
                         </div>
                         <div className="skill__back">
                             <h2>Back End</h2>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-check-square-fill" viewBox="0 0 16 16">
-                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
-                                </svg>
-                                &nbsp;
-                                Note JS (ฺBasic)
-                            </p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-check-square-fill" viewBox="0 0 16 16">
-                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
-                                </svg>
-                                &nbsp;
-                                PHP Laravel
-                            </p>
+                            <p><img src={node} alt="" /> &nbsp; Note JS (Basic)</p>
+                            <p><img src={laravel} alt="" /> &nbsp; PHP Laravel</p>
                         </div>
                         <div className="skill__database">
                             <h2>Database</h2>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-check-square-fill" viewBox="0 0 16 16">
-                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
-                                </svg>
-                                &nbsp;
-                                Firebase
-                            </p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-check-square-fill" viewBox="0 0 16 16">
-                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
-                                </svg>
-                                &nbsp;
-                                MySQL (ฺBasic)
-                            </p>
+                            <p><img src={firebase} alt="" /> &nbsp; Firebase</p>
+                            <p><img src={mysql} alt="" /> &nbsp; MySQL (ฺBasic)</p>
                         </div>
                         <div className="skill__tool">
                             <h2>Tools</h2>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-check-square-fill" viewBox="0 0 16 16">
-                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
-                                </svg>
-                                &nbsp;
-                                Bootstrap
-                            </p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-check-square-fill" viewBox="0 0 16 16">
-                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
-                                </svg>
-                                &nbsp;
-                                Material UI
-                            </p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-check-square-fill" viewBox="0 0 16 16">
-                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
-                                </svg>
-                                &nbsp;
-                                jQuery
-                            </p>
-                            <p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-check-square-fill" viewBox="0 0 16 16">
-                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z" />
-                                </svg>
-                                &nbsp;
-                                Git
-                            </p>
+                            <p><img src={bootstrap} alt="" /> &nbsp; Bootstrap</p>
+                            <p><img src={mui} alt="" /> &nbsp; Material UI</p>
+                            <p><img src={jquery} alt="" /> &nbsp; jQuery </p>
+                            <p><img src={git} alt="" /> &nbsp; Git</p>
                         </div>
                     </div>
                     <div className="skill__text">
-                        <h3>& Responsive Web Design</h3>
+                        <h3>Responsive Web Design</h3>
                     </div>
                 </FadeInSection>
             </div>
