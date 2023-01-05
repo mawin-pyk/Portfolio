@@ -1,6 +1,6 @@
 .About {
     min-height: 80vh;
-    background-color: var(--black);
+    background-color: var(--secondary-blue);
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
 
@@ -12,7 +12,6 @@
 
 .about-content h1 {
     margin-bottom: 40px;
-    color: var(--white);
     font-size: 4.8rem;
     text-align: center;
 }
@@ -37,7 +36,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px 0px;
-    color: var(--white);
 }
 
 .about__detail-row {
@@ -50,7 +48,7 @@
 .about__experience {
     padding: 10px;
     text-align: center;
-    border: 1px solid var(--white);
+    border: 1px solid var(--black);
     border-radius: 5px;
 }
 
