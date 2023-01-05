@@ -14,13 +14,13 @@ function Project() {
                     <div className="project-content-row">
                         <div className="project__image">
                             <h2>Racewars</h2>
-                            <p className="text-effect">This web application is built on React and Firebase.</p>
-                            <a className="link-effect" href="#project">
+                            <p>This web application is built on React and Firebase.</p>
+                            <a href="#project">
                                 <img src={chrome} alt="" />
                                 &nbsp;
                                 View Project
                             </a>
-                            <a className="link-effect" href="#project">
+                            <a href="#project">
                                 <img src={github} alt="" />
                                 &nbsp;
                                 GitHub
@@ -29,13 +29,13 @@ function Project() {
                         </div>
                         <div className="project__image">
                             <h2>Portfolio</h2>
-                            <p className="text-effect">This web application is my portfolio built on React.</p>
-                            <a className="link-effect" href="#project">
+                            <p>This web application is my portfolio built on React.</p>
+                            <a href="#project">
                                 <img src={chrome} alt="" />
                                 &nbsp;
                                 View Project
                             </a>
-                            <a className="link-effect" href="#project">
+                            <a href="#project">
                                 <img src={github} alt="" />
                                 &nbsp;
                                 GitHub
