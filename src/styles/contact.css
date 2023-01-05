@@ -21,7 +21,6 @@
 }
 
 .contact__address h2 {
-    margin-bottom: 20px;
     font-size: 2.4rem;
 }
 
@@ -30,6 +29,7 @@
 }
 
 .contact__address p {
+    margin-top: 20px;
     color: var(--gray);
 }
 
@@ -42,7 +42,6 @@
 .form-group label {
     color: var(--gray);
     font-size: 1.6rem;
-    font-weight: 700;
 }
 
 .form-group input,

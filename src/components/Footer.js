@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className="Footer">
             <div className="footer-content">
-                <p>Copyright © 2022 Mawin.</p>
+                <p>Copyright © {new Date().getFullYear()} Mawin.</p>
             </div>
         </div>
     );

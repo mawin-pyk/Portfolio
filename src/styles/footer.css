@@ -11,6 +11,7 @@
 
 .footer-content p {
     color: var(--gray);
+    font-size: 1.4rem;
     text-align: center;
 }
 
@@ -18,14 +19,6 @@
 
     .footer-content p {
         text-align: start;
-    }
-
-}
-
-@media only screen and (min-width: 1200px) {
-
-    .footer-content {
-        width: 1080px;
     }
 
 }
