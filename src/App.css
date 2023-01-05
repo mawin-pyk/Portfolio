@@ -11,10 +11,8 @@ body {
     --gray: #666666;
     --white: #ffffff;
     --blue: #0070f3;
-    --secondary-blue: #85beff;
     --red: #df4759;
-    --border: #eaeaea;
-    --background: #fafafa;
+    --secondary-gray: #eaeaea;
     --white-rgba: rgba(255, 255, 255, 0.9);
 }
 

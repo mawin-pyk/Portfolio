@@ -1,6 +1,6 @@
 .Footer {
     border-top: 1px solid var(--border);
-    background-color: var(--background);
+    background-color: var(--secondary-gray);
 }
 
 .footer-content {

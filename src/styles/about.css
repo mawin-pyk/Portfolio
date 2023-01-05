@@ -1,6 +1,6 @@
 .About {
     min-height: 80vh;
-    background-color: var(--secondary-blue);
+    background-color: var(--secondary-gray);
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 }
 
@@ -12,6 +12,7 @@
 
 .about-content h1 {
     margin-bottom: 40px;
+    color: var(--blue);
     font-size: 4.8rem;
     text-align: center;
 }
@@ -48,8 +49,9 @@
 .about__experience {
     padding: 10px;
     text-align: center;
-    border: 1px solid var(--black);
     border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (min-width: 768px) {

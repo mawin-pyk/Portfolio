@@ -1,8 +1,6 @@
 .Project {
     min-height: 80vh;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    background-color: var(--background);
+    background-color: var(--secondary-gray);
 }
 
 .project-content {
@@ -35,7 +33,7 @@
 }
 
 .project__image:hover {
-    background-color: var(--secondary-blue);
+    background-color: var(--white);
 }
 
 .project__image:hover .image-effect {
