@@ -15,12 +15,12 @@ function Project() {
                         <div className="project__image">
                             <h2>Racewars</h2>
                             <p>This web application is built on React and Firebase.</p>
-                            <a href="#project">
+                            <a href="https://react-67159.web.app">
                                 <img src={chrome} alt="" />
                                 &nbsp;
                                 View Project
                             </a>
-                            <a href="#project">
+                            <a href="https://github.com/mawin-pyk/Racewars">
                                 <img src={github} alt="" />
                                 &nbsp;
                                 GitHub
@@ -30,12 +30,12 @@ function Project() {
                         <div className="project__image">
                             <h2>Portfolio</h2>
                             <p>This web application is my portfolio built on React.</p>
-                            <a href="#project">
+                            <a href="https://mawin.netlify.app">
                                 <img src={chrome} alt="" />
                                 &nbsp;
                                 View Project
                             </a>
-                            <a href="#project">
+                            <a href="https://github.com/mawin-pyk/Portfolio">
                                 <img src={github} alt="" />
                                 &nbsp;
                                 GitHub
