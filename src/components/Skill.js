@@ -30,7 +30,7 @@ function Skill() {
                             <p><img src={scss} alt="" /> &nbsp; SCSS</p>
                             <p><img src={javascript} alt="" /> &nbsp; JavaScript</p>
                             <p><img src={react} alt="" /> &nbsp; React JS</p>
-                            <p><img src={next} alt="" /> &nbsp; Next JS (ฺBasic)</p>
+                            <p><img src={next} alt="" /> &nbsp; Next JS (Basic)</p>
                         </div>
                         <div className="skill__back">
                             <h2>Back End</h2>
@@ -40,7 +40,7 @@ function Skill() {
                         <div className="skill__database">
                             <h2>Database</h2>
                             <p><img src={firebase} alt="" /> &nbsp; Firebase</p>
-                            <p><img src={mysql} alt="" /> &nbsp; MySQL (ฺBasic)</p>
+                            <p><img src={mysql} alt="" /> &nbsp; MySQL (Basic)</p>
                         </div>
                         <div className="skill__tool">
                             <h2>Tools</h2>
