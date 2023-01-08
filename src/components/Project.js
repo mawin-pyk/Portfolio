@@ -1,6 +1,7 @@
 import React from 'react';
 import FadeInSection from './FideInSection';
 import racewars from '../files/racewars.webp';
+import portfolio from '../files/portfolio.webp';
 import chrome from '../files/chrome.webp';
 import github from '../files/github.webp';
 import '../styles/project.css';
@@ -40,7 +41,7 @@ function Project() {
                                 &nbsp;
                                 GitHub
                             </a>
-                            <img className="image-effect" src={racewars} alt="" />
+                            <img className="image-effect" src={portfolio} alt="" />
                         </div>
                     </div>
                 </FadeInSection>
