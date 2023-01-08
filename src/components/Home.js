@@ -8,8 +8,10 @@ function Home() {
             <div className="home-content">
                 <FadeInSection>
                     <div className="home__text">
-                        <h1><span>Front End </span>Developer &lt;/&gt;</h1>
-                        <h2>Hi, I'm Mawin Pomyukhon. Welcome to my world.</h2>
+                        <h2>Hi, I'm</h2>
+                        <h1>Mawin Pomyukhon</h1>
+                        <h2>Front End Developer &lt;/&gt;</h2>
+                        <h3>Welcome to my web.</h3>
                     </div>
                     <div className="home__link">
                         <a href="#about">About me</a>
