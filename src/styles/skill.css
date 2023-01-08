@@ -60,6 +60,7 @@
 @media only screen and (min-width: 768px) {
 
     .skill-content-row {
+        grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -72,6 +73,7 @@
     }
 
     .skill-content-row {
+        grid-template-rows: unset;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
