@@ -1,5 +1,6 @@
 import React from 'react';
 import FadeInSection from './FideInSection';
+import resume from '../files/resume.pdf';
 import '../styles/home.css';
 
 function Home() {
@@ -15,7 +16,7 @@ function Home() {
                     </div>
                     <div className="home__link">
                         <a href="#about">About me</a>
-                        <a href="#skill">Resume</a>
+                        <a href={resume} target="_blank" rel="noreferrer">Resume</a>
                     </div>
                 </FadeInSection>
             </div>
