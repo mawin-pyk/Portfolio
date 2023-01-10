@@ -21,10 +21,10 @@ function About() {
                                 </div>
                                 <div className="about__experience">
                                     <p>Experience</p>
-                                    <p>0 Month</p>
+                                    <p>4 Months</p>
                                 </div>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo quo veniam, autem a exercitationem neque animi saepe, ab, soluta commodi assumenda cumque facilis accusantium veritatis? Optio esse officia vero quod dicta. Iste officiis maxime distinctio dolorem, minima hic, quae repudiandae odio voluptas nam reiciendis. Obcaecati nisi saepe illo eaque sapiente.</p>
+                            <p>I am a front-end developer. I am familiar with using HTML, CSS, JavaScript, Bootstrap and React looking for a job as front-end developer position to bring knowledge and skills that are used in the work and willing to learn new things.</p>
                         </div>
                     </div>
                 </FadeInSection>
