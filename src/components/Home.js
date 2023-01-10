@@ -10,7 +10,7 @@ function Home() {
                     <div className="home__text">
                         <h2>Hi, I'm</h2>
                         <h1>Mawin Pomyukhon</h1>
-                        <h2>Front End Developer</h2>
+                        <h2>Front-end Developer</h2>
                         <h3>Welcome to my web.</h3>
                     </div>
                     <div className="home__link">
