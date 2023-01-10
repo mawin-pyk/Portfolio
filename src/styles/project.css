@@ -17,9 +17,8 @@
 }
 
 .project-content-row {
-    display: flex;
-    flex-direction: column;
-    gap: 40px 0px;
+    display: grid;
+    gap: 40px;
 }
 
 .project__image {
@@ -70,8 +69,7 @@
     }
 
     .project-content-row {
-        flex-direction: row;
-        gap: 0px 40px;
+        grid-template-columns: 1fr 1fr;
     }
 
     .project__image h2 {

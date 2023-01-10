@@ -2,6 +2,7 @@ import React from 'react';
 import FadeInSection from './FideInSection';
 import racewars from '../files/racewars.webp';
 import portfolio from '../files/portfolio.webp';
+import campaign from '../files/campaign.webp';
 import chrome from '../files/chrome.webp';
 import github from '../files/github.webp';
 import '../styles/project.css';
@@ -30,7 +31,7 @@ function Project() {
                         </div>
                         <div className="project__image">
                             <h2>Portfolio</h2>
-                            <p>This web application is my portfolio built on React.</p>
+                            <p>This web application is built on React.</p>
                             <a href="https://mawin.netlify.app" target="_blank" rel="noreferrer">
                                 <img src={chrome} alt="" />
                                 &nbsp;
@@ -42,6 +43,11 @@ function Project() {
                                 GitHub
                             </a>
                             <img className="image-effect" src={portfolio} alt="" />
+                        </div>
+                        <div className="project__image">
+                            <h2>Campaign</h2>
+                            <p>This web application is built on Laravel and MySQL.</p>
+                            <img className="image-effect" src={campaign} alt="" />
                         </div>
                     </div>
                 </FadeInSection>
